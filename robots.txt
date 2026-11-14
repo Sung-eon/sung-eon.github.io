@@ -1,0 +1,6 @@
+# The whole domain may be crawled. One Sitemap line per site: the hub's, then each project's (add a line per project).
+User-agent: *
+Allow: /
+
+Sitemap: https://gh.sung-eon.space/sitemap.xml
+Sitemap: https://gh.sung-eon.space/facetshot/sitemap-index.xml

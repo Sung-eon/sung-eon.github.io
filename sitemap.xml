@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The hub's one page. Each project's site has its own sitemap, listed in robots.txt. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url><loc>https://gh.sung-eon.space/</loc></url>
+</urlset>
