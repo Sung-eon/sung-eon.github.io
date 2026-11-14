@@ -89,11 +89,6 @@ h1 {
 	line-height: 1.55;
 }
 
-/* One quiet line under the lede, as under the project sites' hero buttons. */
-.hero-meta {
-	margin: 1.25rem 0 0;
-}
-
 main {
 	padding-block: 1rem 4rem;
 }
@@ -137,11 +132,6 @@ h2 a:hover {
 }
 .body p {
 	margin: 0 0 1rem;
-}
-.hero-meta,
-.meta {
-	color: var(--muted);
-	font: 400 0.75rem/1.6 'JetBrains Mono', ui-monospace, monospace;
 }
 
 /* Buttons, as the project sites' hero buttons: a filled pill for the site, quiet ones beside it. */
