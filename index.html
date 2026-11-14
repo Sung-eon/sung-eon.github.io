@@ -9,6 +9,9 @@
 		<meta property="og:description" content="Open-source projects by Sung-eon Park." />
 		<meta property="og:url" content="https://gh.sung-eon.space/" />
 		<meta property="og:type" content="website" />
+		<!-- The theme is set before anything paints, from the same key the project sites (Starlight) use, so a choice
+		     made on one carries to the others. data-cfasync keeps Cloudflare's Rocket Loader from deferring it. -->
+		<script data-cfasync="false" src="/theme.js"></script>
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,15 +22,17 @@
 		<link rel="stylesheet" href="/style.css" />
 	</head>
 	<body>
-		<header>
+		<header class="wrap">
 			<h1>Open source</h1>
 			<p class="lede">
-				Tools by <a href="https://sung-eon.space">Sung-eon Park</a>, free and MIT-licensed. Each one has its own
-				site and its own repository.
+				I'm <a href="https://sung-eon.space">Sung-eon Park</a>, and I build these tools to learn. When one turns
+				out to be useful beyond my own desk, I open it up, in the hope that it helps someone else and that we get
+				better at this together, each building on what the other shares.
 			</p>
+			<p class="hero-meta">Free and MIT-licensed · each with its own site and repository</p>
 		</header>
 
-		<main>
+		<main class="wrap">
 			<!-- One <article> per project, newest first. Each project's site is deployed from its own repository's
 			     gh-pages branch and appears here at /<repository>/. -->
 			<article class="project">
@@ -41,19 +46,42 @@
 						broken and what it logged. For people and AI coding agents.
 					</p>
 					<p class="meta">TypeScript · Bun · web, desktop and iOS apps</p>
-					<ul class="links">
-						<li><a href="/facetshot/">Website</a></li>
-						<li><a href="https://github.com/Sung-eon/facetshot">GitHub</a></li>
-						<li><a href="https://www.npmjs.com/package/facetshot">npm</a></li>
-					</ul>
+					<div class="actions">
+						<a class="button primary" href="/facetshot/">
+							Website
+							<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#arrow" /></svg>
+						</a>
+						<a class="button" href="https://github.com/Sung-eon/facetshot">
+							GitHub
+							<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#github" /></svg>
+						</a>
+						<a class="button" href="https://www.npmjs.com/package/facetshot">npm</a>
+					</div>
 				</div>
 			</article>
 		</main>
 
 		<footer>
-			<a href="https://github.com/Sung-eon">github.com/Sung-eon</a>
-			<span aria-hidden="true">·</span>
-			<a href="https://sung-eon.space">sung-eon.space</a>
+			<div class="wrap">
+				<a href="https://github.com/Sung-eon">github.com/Sung-eon</a>
+				<span aria-hidden="true">·</span>
+				<a href="https://sung-eon.space">sung-eon.space</a>
+			</div>
 		</footer>
+
+		<svg hidden>
+			<symbol id="github" viewBox="0 0 24 24">
+				<path
+					fill="currentColor"
+					d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"
+				/>
+			</symbol>
+			<symbol id="arrow" viewBox="0 0 24 24">
+				<path
+					fill="currentColor"
+					d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 1.42 1.42l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"
+				/>
+			</symbol>
+		</svg>
 	</body>
 </html>
